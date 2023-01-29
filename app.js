@@ -1,5 +1,14 @@
-function add(n1, n2) {
-    return n1 + n2;
+function sum(num1, num2)
+{
+    if(typeof num1 ==='number' && typeof num2 === 'number')
+    {
+        return num1 + num2; 
+    }
+    else
+    {
+        return new Error("values are not number");
+    }
+    
 }
-var result = add(10, 20);
-console.warn(result);
+
+console.warn(sum('20',30));
