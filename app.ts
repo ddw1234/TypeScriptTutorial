@@ -1,2 +1,2 @@
 let data="hello";
-data = 2
+data = "hi"
