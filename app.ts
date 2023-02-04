@@ -1,6 +1,10 @@
 class Users{
-    name:string = '';
-    email:string ='';
+
+   constructor(public name:string)
+   {
+    this.name=name;
+    console.log("{name} constructor call ");
+   }
     
     addUser(user:string)
     {
@@ -8,6 +12,6 @@ class Users{
     }
 }
 
-let User1=new Users;
+let User1=new Users('ak');
 let result=User1.addUser('anik');
-console.log(result);
+console.log(User1.name);
