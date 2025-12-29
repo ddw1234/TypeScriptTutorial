@@ -1,17 +1,6 @@
-class Users{
-
-   constructor(public name:string)
-   {
-    this.name=name;
-    console.log("{name} constructor call ");
-   }
-    
-    addUser(user:string)
-    {
-        return '${user} is added'
-    }
+function add(a:number,b:number)
+{
+    return a + b;
 }
 
-let User1=new Users('ak');
-let result=User1.addUser('anik');
-console.log(User1.name);
+console.warn(add(3,4));
